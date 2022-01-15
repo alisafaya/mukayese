@@ -1,0 +1,22 @@
+{
+    "eval_gen_len": 58.6046,
+    "eval_loss": 4.246268272399902,
+    "eval_rouge1": 46.4121,
+    "eval_rouge2": 34.531,
+    "eval_rougeL": 41.3883,
+    "eval_rougeLsum": 43.0773,
+    "eval_runtime": 380.8871,
+    "eval_samples": 11565,
+    "eval_samples_per_second": 30.363,
+    "eval_steps_per_second": 0.239,
+    "predict_gen_len": 58.9811,
+    "predict_loss": 4.286545276641846,
+    "predict_rouge1": 42.5719,
+    "predict_rouge2": 29.778,
+    "predict_rougeL": 37.0594,
+    "predict_rougeLsum": 38.8343,
+    "predict_runtime": 410.0958,
+    "predict_samples": 12775,
+    "predict_samples_per_second": 31.151,
+    "predict_steps_per_second": 0.244
+}
