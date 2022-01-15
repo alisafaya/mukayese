@@ -24,13 +24,13 @@ We collect our documentation for reproducing the baselines for Mukayese in this 
 - [BiLSTM-CRF: Bi-directional Long Short Term Memory with Conditional Random Field](pos-tagging)
 - [BERT: Pretrained Bi-directional Transformers](pos-tagging)
 
-## Sentence level Tokenization
+## Sentence Segmentation
 
-- [NLTK Punkt Sentence Tokenizer](sent-tokenize)
-- [SpaCy Sentencizer](sent-tokenize)
+- [NLTK Punkt Sentence Tokenizer](segmentation)
+- [SpaCy Sentencizer](segmentation)
 - [ErSatz](https://github.com/rewicks/ersatz)
 
-## Spell-checking 
+## Spell-checking and Correction
 
 - [Hunspell Spell-checker](spell-checking)
 - [Zemberek NLP tool](spell-checking)
