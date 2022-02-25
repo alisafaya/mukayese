@@ -2,6 +2,10 @@
 
 Turkish Natural Language Processing is left behind in developing state-of-the-art systems due to a lack of organized benchmarks and baselines. We fill this gap with __Mukayese__ (Turkish word for "comparison/benchmarking"), an extensive set of datasets and benchmarks for several Turkish NLP tasks. All of the datasets and code have been made public in this repository.
 
+## Updates
+
+- (25/02/2022) Datasets have been made available through pre-release [v0.0.1](https://github.com/alisafaya/mukayese/releases/tag/v0.0.1)
+
 ## What to do with Mukayese ?
 
 With Mukayese, researchers of Turkish NLP will be able to:
