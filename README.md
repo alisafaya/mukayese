@@ -9,6 +9,7 @@ Turkish Natural Language Processing is left behind in developing state-of-the-ar
 ## Updates
 
 - (22/03/2022) Summarization models are online on Huggingface! Download [here](https://huggingface.co/mukayese)
+- (01/03/2022) Paper is on ArXiv. View [here](https://arxiv.org/abs/2203.01215).
 - (25/02/2022) Datasets have been made available through pre-release [v0.0.1](https://github.com/alisafaya/mukayese/releases/tag/v0.0.1)
 
 ## What to do with Mukayese ?
@@ -152,3 +153,15 @@ _Baselines_
 - [Bi-directional Long Short Term Memory](text-classification)
 - [BERT: Pretrained Bi-directional Transformers](text-classification)
 
+## Citation
+
+```
+@misc{safaya-etal-2022-mukayese,
+    title={Mukayese: Turkish NLP Strikes Back},
+    author={Ali Safaya and Emirhan Kurtuluş and Arda Göktoğan and Deniz Yuret},
+    year={2022},
+    eprint={2203.01215},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
