@@ -8,6 +8,7 @@ Turkish Natural Language Processing is left behind in developing state-of-the-ar
 
 ## Updates
 
+- (22/03/2022) Summarization models are online on Huggingface! Download [here](https://huggingface.co/mukayese)
 - (25/02/2022) Datasets have been made available through pre-release [v0.0.1](https://github.com/alisafaya/mukayese/releases/tag/v0.0.1)
 
 ## What to do with Mukayese ?
@@ -112,6 +113,31 @@ _Baselines_
 - [Turkish BART from Scratch](summarization)
 - [mBART](summarization)
 - [mT5-Base](summarization)
+
+Download trained models [here](https://huggingface.co/mukayese)
+
+_Usage_
+
+```python
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+
+tokenizer = AutoTokenizer.from_pretrained("mukayese/mt5-base-turkish-sum")
+model = AutoModelForSeq2SeqLM.from_pretrained("mukayese/mt5-base-turkish-sum")
+
+article = """Fransız devi PSG'nin üzerindeki kara bulutlar dağılmıyor. 
+Devler Ligi'nde Real Madrid'e olaylı şekilde boyun eğen başkent temsilcisinde oyuncuların gruplaşmaya başladığı öne sürüldü. 
+Güney Amerikalılar ve Fransızca konuşanlar olarak ikiye ayrılan oyuncuların saha içerisinde de birbirlerine uzak olduğu iddia edildi. 
+İşte PSG'de soyunma odasında yaşananlar ve 20 milyon avroluk tazminat ihtimali... 
+UEFA Şampiyonlar Ligi'nde Real Madrid'e sansasyonel bir şekilde elenen Paris Saint Germain'de Kylian Mbappe haricindeki tüm oyunculara yönelik taraftar tepkisinin devam etmesi başkent temsilcisindeki krizi derinleştirdi.
+RMC Sport'ta yer alan haberde;
+Paris Saint Germain'in soyunma odasında işlerin yolunda gitmediği ve futbolcuların iki gruba ayrıldığı öne sürüldü. İddiaya göre oyuncular gruplaşmaya başladı ve aralarındaki iletişim her geçen gün zayıflıyor."""
+
+inputs = tokenizer([article], max_length=1024, return_tensors="pt")
+summary_ids = model.generate(inputs["input_ids"], num_beams=6, max_length=100)
+tokenizer.batch_decode(summary_ids, skip_special_tokens=True)[0]
+
+>>> "UEFA Şampiyonlar Ligi'nde Real Madrid'e olaylı şekilde boyun eğen Paris Saint Germain'de oyuncuların gruplaşmaya başladığı öne sürüldü."
+```
 
 ### Text Classification
 
