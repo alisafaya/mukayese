@@ -6,8 +6,11 @@
 
 Turkish Natural Language Processing is left behind in developing state-of-the-art systems due to a lack of organized benchmarks and baselines. We fill this gap with __Mukayese__ (Turkish word for "comparison/benchmarking"), an extensive set of datasets and benchmarks for several Turkish NLP tasks. All of the datasets and code have been made public in this repository.
 
+Ali Safaya, Emirhan Kurtuluş, Arda Goktogan, and Deniz Yuret. 2022. Mukayese: Turkish NLP Strikes Back. In Findings of the Association for Computational Linguistics: ACL 2022, pages 846–863, Dublin, Ireland. Association for Computational Linguistics.
+
 ## Updates
 
+- (25/05/2022) Paper is accepted to Findings of ACL'22.
 - (22/03/2022) Summarization models are online on Huggingface! Download [here](https://huggingface.co/mukayese)
 - (01/03/2022) Paper is on ArXiv. View [here](https://arxiv.org/abs/2203.01215).
 - (25/02/2022) Datasets have been made available through pre-release [v0.0.1](https://github.com/alisafaya/mukayese/releases/tag/v0.0.1)
@@ -156,12 +159,19 @@ _Baselines_
 ## Citation
 
 ```
-@misc{safaya-etal-2022-mukayese,
-    title={Mukayese: Turkish NLP Strikes Back},
-    author={Ali Safaya and Emirhan Kurtuluş and Arda Göktoğan and Deniz Yuret},
-    year={2022},
-    eprint={2203.01215},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
+@inproceedings{safaya-etal-2022-mukayese,
+    title = "Mukayese: {T}urkish {NLP} Strikes Back",
+    author = "Safaya, Ali  and
+      Kurtulu{\c{s}}, Emirhan  and
+      Goktogan, Arda  and
+      Yuret, Deniz",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-acl.69",
+    doi = "10.18653/v1/2022.findings-acl.69",
+    pages = "846--863"
 }
 ```
