@@ -6,7 +6,7 @@
 
 Turkish Natural Language Processing is left behind in developing state-of-the-art systems due to a lack of organized benchmarks and baselines. We fill this gap with __Mukayese__ (Turkish word for "comparison/benchmarking"), an extensive set of datasets and benchmarks for several Turkish NLP tasks. All of the datasets and code have been made public in this repository.
 
-Ali Safaya, Emirhan Kurtuluş, Arda Goktogan, and Deniz Yuret. 2022. Mukayese: Turkish NLP Strikes Back. In Findings of the Association for Computational Linguistics: ACL 2022, pages 846–863, Dublin, Ireland. Association for Computational Linguistics.
+_Ali Safaya, Emirhan Kurtuluş, Arda Goktogan, and Deniz Yuret. 2022. Mukayese: Turkish NLP Strikes Back. In Findings of the Association for Computational Linguistics: ACL 2022, pages 846–863, Dublin, Ireland. Association for Computational Linguistics._
 
 ## Updates
 
