@@ -1,0 +1,12 @@
+{
+    "varied": "varied sources",
+    "wiki": "includes all types of wikis",
+    "news-paper": "online news resource",
+    "academic": "using research papers online",
+    "books": "using online books",
+    "user-generated": "reviews or comments of internet users (amazon, imdb etc.)",
+    "social-media": "twitter tweets",
+    "emails": "sent emails",
+    "dialog": "short messages sms or chats",
+    "web-collection": "crawled from web which can contain extracted or raw web pages"
+}

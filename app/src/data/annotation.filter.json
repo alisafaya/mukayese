@@ -1,0 +1,11 @@
+{
+    "Unannotated": "",
+    "tokenized-word-perline": "Tokenized with a format that has a word for every line",
+    "tokenized-whitespace": "Tokenized with a format that is seperated to units including punctiation marks",
+    "sentenced-marked": "Starting and ending of the sentences are marked",
+    "pos-tagged": "word types are tagged",
+    "morphologically-annotated": "contains Morpheme tag",
+    "dependency-annotation": "contains Dependency analyse information tag",
+    "syntactically-annotated": "tagged at Syntactical level",
+    "statistics": "Contains statistical information"
+}

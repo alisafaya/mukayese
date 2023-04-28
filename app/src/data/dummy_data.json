@@ -1,0 +1,110 @@
+[
+  {
+    "catalog":"XYZ-C-2020-CCBY-00",
+    "type":"Corpus",
+    "name":"BOUN Web Derlemi",
+    "license":"CC Attribution-Noncommercial-Share Alike",
+    "release-date":2008,
+    "download-size":"4.3GB",
+    "authors":"Department of Computer Engineering, Bogaziçi University",
+    "format":"XML",
+    "annotation":"Available",
+    "description":"Her satıra bir sözcük gelecek şekilde, paragraf ve cümleler etiketlenmiş olarak dağıtılmakta. Veriler için yayıncı bilgisi, ve URL adresleri verilmiş."
+  },
+  {
+    "catalog":"XYZ-C-2020-CCBY-01",
+    "type":"Corpus",
+    "name":"trTenTen",
+    "license":"Need to consult SketchEngine",
+    "release-date":2014,
+    "download-size":"8GB",
+    "authors":"SketchEngine",
+    "format":"Json",
+    "annotation":"None",
+    "description":null
+  },
+  {
+    "catalog":"XYZ-C-2020-CCBY-02",
+    "type":"Corpus",
+    "name":"TasvirEt",
+    "license":"MIT",
+    "release-date":2016,
+    "download-size":"3.7MB",
+    "authors":"Hacettepe Üniversitesi",
+    "format":"Json",
+    "annotation":"None",
+    "description":"Flickr8K resim kümesindeki her resim için 2 adet crowd-sourced Türkçe betimleme, toplam 16000 cümle"
+  },
+  {
+    "catalog":"XYZ-C-2020-CCBY-03",
+    "type":"Corpus",
+    "name":"EksiCorpus",
+    "license":"CC Attribution-Noncommercial-Share Alike",
+    "release-date":2019,
+    "download-size":"234MB",
+    "authors":null,
+    "format":"Json",
+    "annotation":"None",
+    "description":"Crawl ederek topladığım ve tezimde kullandığım eksisozluk derlemi. Dolayısıyla public yayınlamanın hukuki olarak sorun yaratıp yaratmayacağından emin değilim."
+  },
+  {
+    "catalog":"XYZ-C-2020-CCBY-04",
+    "type":"Wordnet",
+    "name":"Turkish Wordnet",
+    "license":"Free",
+    "release-date":2003,
+    "download-size":"4.3GB",
+    "authors":null,
+    "format":"XML",
+    "annotation":"Available",
+    "description":"https:\/\/bitbucket.org\/ozlemc\/twn\/src 'dan da indirilebilir"
+  },
+  {
+    "catalog":"XYZ-C-2020-CCBY-05",
+    "type":"Corpus",
+    "name":"Dialog Act-Reference Sentence",
+    "license":"Free",
+    "release-date":2020,
+    "download-size":"4.3GB",
+    "authors":"MEF Üniversitesi",
+    "format":"Raw Text",
+    "annotation":"Available",
+    "description":"Bio Pair: Dialog Act ve karşılık gelen referans cümle - DA: Bir kişiyi tasvir için kullanılabilecek bilgiler inform(feature1=value1, ....featureN=valueN)\nVenue Pair: Dialog Act ve karşılık gelen referans cümle - DA: Mekan tasviri, kıyaslaması ve sorgulaması gibi eylemlerde kullanılabilecek bilgiler compare(feature1=value1, ....featureN=valueN)"
+  },
+  {
+    "catalog":"XYZ-C-2020-CCBY-06",
+    "type":"Corpus",
+    "name":"Normalization Test Set",
+    "license":null,
+    "release-date":2018,
+    "download-size":"234MB",
+    "authors":null,
+    "format":"Raw Text",
+    "annotation":"None",
+    "description":"1430 Tweet ve düzeltilmiş halleri. 715 kendi topladığım tweet, 715 Taner Sezer corpustan gelen tweet.   "
+  },
+  {
+    "catalog":"XYZ-C-2020-CCBY-07",
+    "type":"Corpus",
+    "name":"Paraphrase Sentences",
+    "license":null,
+    "release-date":2013,
+    "download-size":"234MB",
+    "authors":"Tubitak",
+    "format":"XML",
+    "annotation":"None",
+    "description":"4 farklı kaynaktan toplanmış pozitif paraphrase çiftleri. "
+  },
+  {
+    "catalog":"XYZ-C-2020-CCBY-08",
+    "type":"Corpus",
+    "name":"Sentence Boundary Detection Test Dataset",
+    "license":null,
+    "release-date":2019,
+    "download-size":"234MB",
+    "authors":null,
+    "format":"Json",
+    "annotation":"None",
+    "description":"Cümle sonu belirteçlerinin ([.?!...]) cümle sonu, alıntı, sayı, kısaltma ve uzantılar olmak üzere 5 farklı durum için işaretlendiği 685 adet haber metninden oluşan veri seti. Toplamda 9343 bin noktalama işareti etiketlenmiştir. "
+  }
+]
