@@ -1,7 +1,0 @@
-{
-    ".tar.gz": "tarball with gzip",
-    ".gz": "gzip",
-    ".tar": "tarball",
-    ".zip": "zip",
-    ".bz2": "bzip2"
-}

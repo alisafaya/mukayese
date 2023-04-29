@@ -2,12 +2,10 @@ import { useState, useEffect } from "react";
 import { useRouteMatch } from "react-router-dom";
 
 import { TaskDetailContainer } from "./TaskDetails.styled";
-import { getTask } from "../../services/FilterService";
+import { getTask } from "../../services/TaskService";
 import FileDetails from "./FileDetails";
-import { useRedirectedData } from "../../hooks";
 
 const TaskDetails = () => {
-  useRedirectedData();
   
   const {
     params: { id },

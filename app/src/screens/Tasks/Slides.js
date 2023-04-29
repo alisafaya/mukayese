@@ -5,10 +5,6 @@ import Divider from "./Divider";
 
 import { SlidesContainer, FlexWrapContainer, FlexWrapReverseContainer } from "./Tasks.styled"
 
-import logo from "../../assets/tdd_logo.png"
-
-
-
 const Product = () => {
   const { product } = config;
   const [firstItem, secondItem] = product.items;
@@ -38,7 +34,6 @@ const Product = () => {
             <img
               className="h-6/6"
               src={firstItem?.img}
-              // src={logo}
               alt={firstItem?.title}
             />
           </div>
@@ -48,7 +43,6 @@ const Product = () => {
             <img
               className="h-6/6"
               src={secondItem?.img}
-              // src={logo}
               alt={secondItem?.title}
             />
           </div>

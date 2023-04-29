@@ -16,12 +16,11 @@ const FileDetails = ({ markdown }) => {
     <FileDetailsContainer>
       <div className="button-container">
         <button onClick={navigateSubmit} className="download-button">
-          Submit a new task
+          Submit a new result
         </button>
       </div>
       <ReactMarkdown remarkPlugins={[gfm]} children={markdown} />
     </FileDetailsContainer>
-
   );
 };
 

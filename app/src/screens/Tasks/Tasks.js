@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { useRedirectedData } from "../../hooks";
-import { listTasks } from "../../services/FilterService";
+import { listTasks } from "../../services/TaskService";
 
 import { TasksGridContainer, TaskCardsContainer, TasksContainer } from "./Tasks.styled";
 import TaskCard from "./TaskCard";
@@ -10,7 +9,6 @@ import Slides from "./Slides";
 import Divider from "./Divider";
 
 const Tasks = () => {
-  useRedirectedData();
 
   const [tasks, setTasks] = useState(null);
 
@@ -31,7 +29,6 @@ const Tasks = () => {
         </div>
 
         <Slides />
-
         <TasksGridContainer>
           <div className="datasets-c">
             <div

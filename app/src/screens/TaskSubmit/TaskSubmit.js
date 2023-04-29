@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import { useState, useEffect } from "react";
 
 import { TaskSubmitContainer, FileDetailsContainer } from "./TaskSubmit.styled";
-import { getSubmitFile } from "../../services/FilterService";
+import { getSubmitFile } from "../../services/TaskService";
 
 const TaskSubmit = () => {
 
