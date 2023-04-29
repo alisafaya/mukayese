@@ -12,39 +12,48 @@ const Product = () => {
   return (
     <SlidesContainer id="product">
       <div className={"slides-main-div"}>
-        <h1>
+        {/* <h1>
           {product.title.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index > 1 ? 'span2' : 'span1'}
+              className={index > 0 ? 'span2' : 'span1'}
             >
               {word}{' '}
             </span>
           ))}
-        </h1>
+        </h1> */}
         <Divider />
         <FlexWrapContainer>
-          <div className={"text-div"}>
-            <h3>
-              {firstItem?.title}
-            </h3>
-            <p>{firstItem?.description}</p>
-          </div>
           <div className={"img-div"}>
+            <a href={firstItem?.url}>
             <img
               className="h-6/6"
               src={firstItem?.img}
               alt={firstItem?.title}
             />
+            </a>
+          </div>
+          <div className={"text-div"}>
+            <h3>
+              {firstItem?.title}
+            </h3>
+            <br />
+            {/* for each line in description print a paragraph */
+              firstItem?.description.split('\n').map((line, index) => (
+                <p key={index}>{line}</p>
+              )) 
+            }
           </div>
         </FlexWrapContainer>
         <FlexWrapReverseContainer>
           <div className={"img-div"}>
+            <a href={secondItem?.url}>
             <img
               className="h-6/6"
               src={secondItem?.img}
               alt={secondItem?.title}
             />
+            </a>
           </div>
           <div className={"text-div"}>
             <div className={"align-middle"}>

@@ -1,19 +1,24 @@
 import React from 'react';
 import { LandingMessageContainer } from "./Tasks.styled"
-
+import Divider from "./Divider";
 
 const MainHero = () => {
   return (
     <LandingMessageContainer>
       <div className="messages-div">
         <h1>
-          <span className={"span1"}>Welcome to</span>{' '}
+          <span className={"span1"}>
+          Mukayese: {' '} 
+          </span>
           <span className={"span2"}>
-            TDD Mukayese
+          Turkish NLP Strikes Back
           </span>
         </h1>
+        <p className="text">Ali Safaya, Emirhan Kurtuluş, Arda Göktoğan, and Deniz Yuret.</p>
+        <p className="text">In Findings of the Association for Computational Linguistics: ACL 2022, pages 846-863, Dublin, Ireland.</p>
+        <Divider/>
         <p>
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        Turkish Natural Language Processing is left behind in developing state-of-the-art systems due to a lack of organized benchmarks and baselines. We fill this gap with Mukayese (Turkish word for "comparison/benchmarking"), an extensive set of datasets and benchmarks for several Turkish NLP tasks.
         </p>
       </div>
     </LandingMessageContainer>

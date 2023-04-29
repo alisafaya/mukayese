@@ -1,4 +1,4 @@
-import { TASKS_PATH, SUBMIT_PATH } from "../constants/Routes";
+import { TASKS_PATH, TASKS_DETAILS_PATH, SUBMIT_PATH } from "../constants/Routes";
 
 export const listTasks = async () => {
 
@@ -24,14 +24,14 @@ export const getTask = async (id) => {
 
   let task = resJson.find(x => x.id === id)
 
-  let result = await fetch(task.markdown)
+  let result = await fetch(
+    TASKS_DETAILS_PATH + task.file)
     .catch(error => {
       let resText = error;
       throw resText;
     });
 
   let resText = await result.text();
-
   return [task, resText]
 };
 

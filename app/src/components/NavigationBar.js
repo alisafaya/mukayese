@@ -7,12 +7,14 @@ const Styles = styled.div`
   .tdd-logo {
     height: 50px;
     cursor: pointer;
+    padding-left: 10rem;
   }
 
   .navbar {
     box-shadow: inset 0px -1px 0px #e2e2ea;
     background-color: #fff;
   }
+
 `;
 
 const NavigationBar = () => {

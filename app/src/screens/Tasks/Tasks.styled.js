@@ -10,32 +10,29 @@ const TasksContainer = styled.div`
   .landing-div {
     --tw-bg-opacity: 1;
     position: relative;
+    margin-top: -1px;
+    height: 100%;
   }
 
-  .ladning-div-nested-one {
-    max-width: 80rem;
-    margin-left: 10rem;
-    margin-right: auto;
+  .landing-div-nested-one {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .landing-div-nested-two {
-    padding-bottom: 8rem;
-    max-width: 42rem;
     width: 100%;
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
     z-index: 10;
     position: relative;
   }
-
 `;
 
 const LandingMessageContainer = styled.main`
 
-margin-top: 7rem;
-padding-left: 2rem;
-padding-right: 2rem;
-max-width: 80rem;
+margin-top: 1rem;
+padding-left: 10%;
+padding-right: 10%;
 margin-left: auto;
 margin-right: auto;
 
@@ -44,16 +41,18 @@ margin-right: auto;
 }
 
 h1 {
+  text-align: center;
   font-size: 4rem;
+  font-variant: small-caps;
   --tw-text-opacity: 1;
   color: rgba(17, 24, 39, var(--tw-text-opacity));
-  letter-spacing: -0.025em;
-  font-weight: 800;
+  // letter-spacing: -0.05em;
+  font-weight: 500;
+  margin: 1.5rem;
 }
 
 .span1 {
   display: inline;
-  
 }
 
 .span2 {
@@ -62,37 +61,41 @@ h1 {
   color: rgba(77, 199, 239, var(--tw-text-opacity));
 }
 
-
 p {
-  margin-left: 0px;
-  margin-right: 0px;
-  font-size: 1.25rem;
-  margin-top: 1.25rem;
-  max-width: 36rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-top: 1.0rem;
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.text {
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: -1.0rem;
   --tw-text-opacity: 1;
   color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
 
 `;
 
-const SlidesContainer = styled.section`
+const SlidesContainer = styled.div`
   padding-top: 2rem;
   padding-bottom: 2rem;
   --tw-bg-opacity: 1;
-
+  margin-left: 10%;
+  margin-right: 10%;
+  
   .slides-main-div {
-    max-width: 64rem;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin: 2rem;
-    width: 100%;
+    max-width: 100%;
   }
 
   h1 {
     --tw-bg-opacity: 1;
     color: rgba(107, 114, 128, var(--tw-text-opacity));
     line-height: 1.25;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 3rem;
     text-align: center;
     width: 100%;
@@ -115,37 +118,41 @@ const SlidesContainer = styled.section`
 const FlexWrapContainer = styled.div`
   flex-wrap: wrap;
   display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
 
   .text-div {
     width: 50%;
-    padding: 1.5rem;
-    margin-top: 2rem;
+    text-align: justify;
+    padding: 5%;
   }
 
   .img-div {
     width: 50%;
-    padding: 1.5rem;
+    padding: 5%;
+
+  }
+  
+  img {
+    width: 100%;
+    &:hover {
+      transform: scale(1.25);
+    }
   }
 
   h3 {
     --tw-text-opacity: 1;
     color: rgba(31, 41, 55, var(--tw-text-opacity));
     line-height: 1;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.875rem;
     margin-bottom: 0.75rem;
   }
 
   p {
+    max-width: 80%;
     --tw-text-opacity: 1;
     color: rgba(75, 85, 99, var(--tw-text-opacity));
-  }
-
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
   }
 `;
 
@@ -173,7 +180,7 @@ const FlexWrapReverseContainer = styled.div`
     --tw-text-opacity: 1;
     color: rgba(31, 41, 55, var(--tw-text-opacity));
     line-height: 1;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.875rem;
     margin-bottom: 0.75rem;
   }
@@ -203,10 +210,10 @@ const DividerContainer = styled.div`
     --tw-bg-opacity: 1;
     background-color: rgba(77, 199, 239, var(--tw-bg-opacity));
     border-top-left-radius: 0.25rem;border-top-right-radius: 0.25rem;
-    width: 16rem;
+    width: 40%;
     height: 0.25rem;
-    margin-bottom: 2.5rem;
-    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -215,10 +222,10 @@ const DividerContainer = styled.div`
 const TaskCardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: 50px;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin-left: 15%;
+  margin-right: 15%;
   row-gap: 2rem;
+  column-gap: 2rem;
 `;
 
 const TasksGridContainer = styled.div`
@@ -227,7 +234,6 @@ font-family: 'Helvetica';
 display: flex;
 flex-direction: row;
 width: 100%;
-padding-top: 2rem;
 
 .filters-c {
   flex: 1;
@@ -269,7 +275,8 @@ padding-top: 2rem;
   --tw-bg-opacity: 1;
   color: rgba(107, 114, 128, var(--tw-text-opacity));
   line-height: 1.25;
-  font-weight: 700;
+  font-weight: 500;
+  font-variant: small-caps;
   font-size: 3rem;
   text-align: center;
   width: 100%;

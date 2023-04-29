@@ -19,37 +19,36 @@ const Tasks = () => {
   }, []);
 
   return (
-      <TasksContainer>
-        <div className={"ladning-div"}>
-          <div className={"ladning-div-nested-one"}>
-            <div className={"landing-div-nested-two"}>
-              <MainHero />
-            </div>
+    <TasksContainer>
+      <div className={"landing-div"}>
+        <div className={"landing-div-nested-one"}>
+          <div className={"landing-div-nested-two"}>
+            <MainHero />
           </div>
         </div>
-
-        <Slides />
-        <TasksGridContainer>
-          <div className="datasets-c">
-            <div
-              style={{
+      </div>
+      <TasksGridContainer>
+        <div className="datasets-c">
+          <div
+            style={{
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
               marginBottom: 16,
-              }}
-            >
-              <h2 className="datasets-title">Tasks</h2>
-            </div>
-            <Divider />
-            <TaskCardsContainer>
-              {tasks?.map((task) => (
-                <TaskCard key={task.id} {...task} />
-              ))}
-            </TaskCardsContainer>
+            }}
+          >
+            <h2 className="datasets-title">Benchmarks</h2>
           </div>
-        </TasksGridContainer>
-      </TasksContainer>
+          <TaskCardsContainer>
+            {tasks?.map((task) => (
+              <TaskCard key={task.id} {...task} />
+            ))}
+          </TaskCardsContainer>
+        </div>
+      </TasksGridContainer>
+      <Slides />
+    </TasksContainer>
+
   );
 };
 

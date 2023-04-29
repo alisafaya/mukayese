@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const TaskSubmitContainer = styled.div`
-  font-family: 'Georgia,Cambria,serif';
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; 
   display: flex;
   flex-direction: row;
   padding: 50px 250px;

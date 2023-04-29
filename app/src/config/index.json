@@ -1,16 +1,12 @@
 {
     "product": {
-        "title": "Welcome to TDD Mukayese",
+        "title": "Mukayese: Turkish NLP Strikes Back",
         "items": [
           {
-            "title": "A plug n play template",
-            "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
-            "img": "/images/tdd_logo.png"
-          },
-          {
-            "title": "Make it your own!",
-            "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
-            "img": "/images/tdd_logo.png"
+            "title": "With Mukayese, you can:",
+            "description": "- Compare the performance of existing methods in leaderboards. \n- Access existing implementations of NLP baselines. \n- Evaluate your own methods on the relevant test datasets. \n- Submit your own results to be enlisted in our leaderboards.",
+            "img": "/images/paper_cropped.png",
+            "url": "https://aclanthology.org/2022.findings-acl.69/"
           }
         ]
     }

@@ -16,11 +16,12 @@ const ContentContainer = styled.div`
 `;
 
 const TaskDetailContainer = styled.div`
-font-family: 'Georgia,Cambria,serif';
-  display: flex;
-  flex-direction: row;
-  padding: 50px 250px;
-  width: 100%;
+
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+display: flex;
+flex-direction: row;
+padding: 50px 250px;
+width: 100%;
 
   blockquote {
     background: #f5f5f5;

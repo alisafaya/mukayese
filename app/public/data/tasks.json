@@ -1,0 +1,56 @@
+[
+  {
+    "id": "dependency_parsing",
+    "name": "Dependency Parsing",
+    "short_description": "Dependency parsing is the task of analyzing the grammatical structure of a sentence.",
+    "file": "dependency_parsing.md"
+  },
+  {
+    "id": "language_modeling",
+    "name": "Language Modeling",
+    "short_description": "Language modeling is the task of assigning a probability to sentences in a language.",
+    "file": "language_modeling.md"
+  },
+  {
+    "id": "machine_translation",
+    "name": "Machine Translation",
+    "short_description": "Machine translation is the task of translating text from one language to another.",
+    "file": "machine_translation.md"
+  },
+  {
+    "id": "morphological_analysis",
+    "name": "Morphological Analysis",
+    "short_description": "Morphological analysis is the task of segmenting words into morphemes and identifying their classes.",
+    "file": "morphological_analysis.md"
+  },
+  {
+    "id": "named_entity_recognition",
+    "name": "Named Entity Recognition",
+    "short_description": "Named entity recognition is the task of identifying named entities in text.",
+    "file": "named_entity_recognition.md"
+  },
+  {
+    "id": "sentence_segmentation",
+    "name": "Sentence Segmentation",
+    "short_description": "Sentence segmentation is the task of dividing text into sentences.",
+    "file": "sentence_segmentation.md"
+  },
+  {
+    "id": "spellchecking",
+    "name": "Spellchecking and Correction",
+    "short_description": "Spellchecking is the task of correcting spelling mistakes in text.",
+    "file": "spellchecking.md"
+  },
+  {
+    "id": "summarization",
+    "name": "Summarization",
+    "short_description": "Summarization is the task of summarizing a document or article into a shorter text.",
+    "file": "summarization.md"
+  },
+  {
+    "id": "text_classification",
+    "name": "Text Classification",
+    "short_description": "Text classification is the task of assigning a set of predefined categories to open-ended text.",
+    "file": "text_classification.md"
+  }
+]
