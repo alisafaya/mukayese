@@ -1,0 +1,13 @@
+{
+    "product": {
+        "title": "Mukayese: Turkish NLP Strikes Back",
+        "items": [
+          {
+            "title": "With Mukayese, you can:",
+            "description": "- Compare the performance of existing methods in leaderboards. \n- Access existing implementations of NLP baselines. \n- Evaluate your own methods on the relevant test datasets. \n- Submit your own results to be enlisted in our leaderboards.",
+            "img": "/images/paper_cropped.png",
+            "url": "https://aclanthology.org/2022.findings-acl.69/"
+          }
+        ]
+    }
+}
