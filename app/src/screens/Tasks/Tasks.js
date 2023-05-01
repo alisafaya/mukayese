@@ -6,7 +6,6 @@ import { TasksGridContainer, TaskCardsContainer, TasksContainer } from "./Tasks.
 import TaskCard from "./TaskCard";
 import MainHero from "./MainHero";
 import Slides from "./Slides";
-import Divider from "./Divider";
 
 const Tasks = () => {
 
@@ -37,7 +36,7 @@ const Tasks = () => {
               marginBottom: 16,
             }}
           >
-            <h2 className="datasets-title">Benchmarks</h2>
+            <h2 className="datasets-title">📏 Benchmarks</h2>
           </div>
           <TaskCardsContainer>
             {tasks?.map((task) => (
