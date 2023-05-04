@@ -3,7 +3,7 @@ import styled from "styled-components";
 const TasksContainer = styled.div`
 
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  overflow: hidden;
+  // overflow: hidden;
   row-gap: 1rem;
   display: grid;
   --tw-bg-opacity: 1;
