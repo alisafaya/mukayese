@@ -1,19 +1,5 @@
 import styled from "styled-components";
 
-const AnnotationsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 2;
-  padding-right: 16px;
-  border-right: 1px solid #e2e2ea;
-`;
-
-const ContentContainer = styled.div`
-  flex: 1;
-  padding: 0 32px;
-  border-right: 1px solid #e2e2ea;
-  flex: 6;
-`;
 
 const TaskDetailContainer = styled.div`
 
@@ -92,8 +78,6 @@ const FileDetailsContainer = styled.div`
 `;
 
 export {
-  AnnotationsContainer,
-  ContentContainer,
   TaskDetailContainer,
   FileDetailsContainer,
 };
