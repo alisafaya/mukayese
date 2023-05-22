@@ -1,7 +1,9 @@
 import { useHistory } from "react-router-dom";
-import ReactMarkdown from "react-markdown";
-import gfm from "remark-gfm"
 import { FileDetailsContainer } from "./TaskDetails.styled";
+
+import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
+import emoji from "remark-emoji";
 
 const FileDetails = ({ markdown }) => {
   const history = useHistory()
@@ -19,7 +21,7 @@ const FileDetails = ({ markdown }) => {
           Submit a new result
         </button>
       </div>
-      <ReactMarkdown remarkPlugins={[gfm]} children={markdown} />
+      <ReactMarkdown remarkPlugins={[gfm, emoji]} children={markdown} />
     </FileDetailsContainer>
   );
 };
