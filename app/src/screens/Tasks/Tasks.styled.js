@@ -68,7 +68,7 @@ h1 {
   color: rgba(77, 199, 239, var(--tw-text-opacity));
 }
 
-p {
+p, a {
   font-size: 1.2rem;
   text-align: justify;
   margin-top: 1.0rem;

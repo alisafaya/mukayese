@@ -14,7 +14,7 @@ const MainHero = () => {
           Turkish NLP Strikes Back
           </span>
         </h1>
-        <p className="text">Ali Safaya, Emirhan Kurtuluş, Arda Göktoğan, and Deniz Yuret.</p>
+        <p className="text"><a href='https://asafaya.me'>Ali Safaya</a>, Emirhan Kurtuluş, Arda Göktoğan, and <a href='http://www.denizyuret.com/'>Deniz Yuret</a></p>
         <p className="text">In Findings of the Association for Computational Linguistics: ACL 2022, pages 846-863, Dublin, Ireland.</p>
         <Divider/>
         <p>
