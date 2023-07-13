@@ -4,7 +4,7 @@ const TaskSubmitContainer = styled.div`
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; 
   display: flex;
   flex-direction: row;
-  padding: 50px 250px;
+  padding: 5% 5%;
   width: 100%;
 
   blockquote {

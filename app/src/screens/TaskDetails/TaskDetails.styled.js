@@ -124,8 +124,8 @@ const FileDetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 4;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 5%;
+  padding-right: 5%;
 `;
 
 export {
