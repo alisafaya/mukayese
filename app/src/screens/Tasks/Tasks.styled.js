@@ -92,7 +92,7 @@ p, a {
 
 const SlidesContainer = styled.div`
   font-family: "Helvetica";
-  display: flex;
+  // display: flex;
   padding-top: 2rem;
   padding-bottom: 2rem;
   --tw-bg-opacity: 1;
