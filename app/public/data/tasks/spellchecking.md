@@ -12,9 +12,9 @@ In this work, we focus on contextless (single word) spellchecking and correction
 
 | Baseline | Verified | Model | SCA | F1 |
 | -------- |--------- |:----- |-----|----|
-| ❌ | ❌ | HUNSPELL-TR (Zafer, 2017) | 25.52 | 86.52 |
-| ❌ | ❌ | ZEMBEREK (Akın and Akın, 2007) | 62.12 | 96.56 |
-| ✅ | ✅ | [OUR HUNSPELL](https://github.com/alisafaya/mukayese/tree/v0.0.1/spell-checking/) | **71.72** | **99.62** |
+| ❌ | ❌ | Hunspell-TR (Zafer, 2017) | 25.52 | 86.52 |
+| ❌ | ❌ | Zemberek (Akın and Akın, 2007) | 62.12 | 96.56 |
+| ✅ | ✅ | [OUR Hunspell](https://github.com/alisafaya/mukayese/tree/v0.0.1/spell-checking/) | **71.72** | **99.62** |
 
 _Spell correction accuracy (SCA) and macroaveraged F1 scores of spellchecking methods on TRSPELL-10._
 

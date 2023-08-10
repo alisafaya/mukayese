@@ -10,19 +10,19 @@ Sentence segmentation is the task of detecting sentence boundaries in a given ar
 
 | Baseline | Verified | Model | F1-SCORE | PRECISION | RECALL | 
 | -------- | -------- |:----- |:--------:|:---------:|:------:|
-| ✅ | ✅ | [SPACY](https://github.com/alisafaya/mukayese/tree/v0.0.1/segmentation/) | 0.74 / 0.37 | 0.76 / 0.48 | 0.72 / 0.30 |
+| ✅ | ✅ | [SpaCy](https://github.com/alisafaya/mukayese/tree/v0.0.1/segmentation/) | 0.74 / 0.37 | 0.76 / 0.48 | 0.72 / 0.30 |
 | | | *Training (Original)* | | | | |
-| ✅ | ✅ | [ERSATZ](https://github.com/alisafaya/mukayese/tree/v0.0.1/segmentation/) | **0.89 / 0.40** | **0.98** / 0.51 | 0.81 / **0.33** | 
-| ✅ | ✅ | [PUNKT](https://github.com/alisafaya/mukayese/tree/v0.0.1/segmentation/) | 0.87 / 0.39 | 0.88 / **0.52** | **0.86** / 0.32 | 
+| ✅ | ✅ | [Ersatz](https://github.com/alisafaya/mukayese/tree/v0.0.1/segmentation/) | **0.89 / 0.40** | **0.98** / 0.51 | 0.81 / **0.33** | 
+| ✅ | ✅ | [Punkt](https://github.com/alisafaya/mukayese/tree/v0.0.1/segmentation/) | 0.87 / 0.39 | 0.88 / **0.52** | **0.86** / 0.32 | 
 | | | *Training (Corrupted)* | | | | |
-| ✅ | ✅ | [ERSATZ](https://github.com/alisafaya/mukayese/tree/v0.0.1/segmentation/) | **0.88 / 0.40** | **0.97 / 0.51** | 0.81 / **0.33** | 
-| ✅ | ✅ | [PUNKT](https://github.com/alisafaya/mukayese/tree/v0.0.1/segmentation/) | 0.85 / 0.39 | 0.86 / 0.50 | **0.84** / 0.31 |
+| ✅ | ✅ | [Ersatz](https://github.com/alisafaya/mukayese/tree/v0.0.1/segmentation/) | **0.88 / 0.40** | **0.97 / 0.51** | 0.81 / **0.33** | 
+| ✅ | ✅ | [Punkt](https://github.com/alisafaya/mukayese/tree/v0.0.1/segmentation/) | 0.85 / 0.39 | 0.86 / 0.50 | **0.84** / 0.31 |
 
 _Results of sentence segmentation baselines. Metrics are reported for both corrupted and clean versions of the test set in the ORIGINAL / CORRUPTED format._
 
 ## 📚 Datasets
 
-We present **TRSEG-41**, a new sentence segmentation dataset for Turkish. This dataset consists of 300 sampled scientific abstracts from (Özturk et al., 2014 [^ozturk^]), 300 curated news articles from **TRNEWS-64**, and a set of 10K tweets.
+We present **trseg-41**, a new sentence segmentation dataset for Turkish. This dataset consists of 300 sampled scientific abstracts from (Özturk et al., 2014 [^ozturk^]), 300 curated news articles from **trnews-64**, and a set of 10K tweets.
 
 
 
@@ -35,11 +35,11 @@ We present **TRSEG-41**, a new sentence segmentation dataset for Turkish. This d
 | Abstracts | 300 | 6K | 112K |
 | Total | 10.6K | 40K | 456K |
 
-_Statistics of TRSEG-41 dataset._
+_Statistics of trseg-41 dataset._
 
 For the scientific abstracts, our sampling rationale is to maximize the number of abbreviations that reduce the accuracy of the rule-based approaches. As for the news subset, we maximize the length of documents and the number of proper nouns. In the Twitter subset, we balance the number of multi/single sentence tweets, and preprocess the tweets by replacing all URLs with `http://some.url`, and all user mentions with `@user`.
 
-Applying sentence segmentation to user-generated content such as social media posts or comments can be quite challenging. To simulate such difficult cases and expose the weaknesses of rule-based methods, we created another version of **TRSEG-41** where we artificially corrupt the boundaries of sentences. This is done by randomly converting sentences to lowercase or uppercase with 50% probability, or by removing all punctuation marks with 50% probability.
+Applying sentence segmentation to user-generated content such as social media posts or comments can be quite challenging. To simulate such difficult cases and expose the weaknesses of rule-based methods, we created another version of **trseg-41** where we artificially corrupt the boundaries of sentences. This is done by randomly converting sentences to lowercase or uppercase with 50% probability, or by removing all punctuation marks with 50% probability.
 
 ## 📏 Metrics
 

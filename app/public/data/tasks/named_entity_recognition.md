@@ -10,35 +10,35 @@ We benchmark three different models on two NER datasets for Turkish and compare 
 
 ## 📊 Leaderboard
 
-| Baseline | Verified | Model | MILLIYET | WIKIANN |
+| Baseline | Verified | Model | MILLIYET | WikiANN |
 | -------- | -------- |:--- |:----:|:----:|
 | ❌ | ❌ | [Yeniterzi, 2011](https://aclanthology.org/P11-3019/) | 91.56 | - |
 | ❌ | ❌ | [Şeker and Eryiğit, 2012](https://aclanthology.org/C12-1150/) | 91.94 | - |
 | ❌ | ❌ | [Güngör et al., 2018](https://ieeexplore.ieee.org/document/8404788)    | 93.37 | - |
 | ✅ | ✅ | [BILSTM-CRF](https://github.com/alisafaya/mukayese/tree/v0.0.1/ner/) | 95.54 | **93.8** |
-| ✅ | ✅ | [BERTURK](https://github.com/alisafaya/mukayese/tree/v0.0.1/ner/) | 95.31 | 92.82 |
-| ✅ | ✅ | [BERTURK-CRF](https://github.com/alisafaya/mukayese/tree/v0.0.1/ner/) | **96.48**  | 93.07 |
+| ✅ | ✅ | [BERTurk](https://github.com/alisafaya/mukayese/tree/v0.0.1/ner/) | 95.31 | 92.82 |
+| ✅ | ✅ | [BERTurk-CRF](https://github.com/alisafaya/mukayese/tree/v0.0.1/ner/) | **96.48**  | 93.07 |
 
 _Evaluation results (CoNLL F1) of NER models on test sets._
 
 ## 📚 Datasets
 
-The first dataset we use is **MILLIYETNER** [^tur^], which is a set of manually, annotated news articles from the Turkish [Milliyet] news resource .The second is the Turkish subset of the semi-automatically annotated Cross-lingual NER dataset **WIKIANN** or (PAN-X)[^pan^], which consists of Turkish Wikipedia articles.
+The first dataset we use is **MilliyetNER** [^tur^], which is a set of manually, annotated news articles from the Turkish [Milliyet] news resource .The second is the Turkish subset of the semi-automatically annotated Cross-lingual NER dataset **WikiANN** or (PAN-X)[^pan^], which consists of Turkish Wikipedia articles.
 
 |             | Training | Validation | Test |
 |------------|------------|------------|------------|
-| **WIKIANN** | | | |
+| **WikiANN** | | | |
 | Location | 9679 | 5014 | 4914 |
 | Organization | 7970 | 4129 | 4154 |
 | Person | 8833 | 4374 | 4519 |
 | **Total Words** | 149786 | 75930 | 75731 |
-| **MILLIYET-NER** | | | |
+| **MilliyetNER** | | | |
 | Location | 8821 | 942 | 1126 |
 | Organization | 8316 | 842 | 873 |
 | Person | 13290 | 1400 | 1603 |
 | **Total Words** | 419996 | 45532 | 49595 |
 
-_Distribution of Named entities over classes in MILLIYET-NER and WIKIANN datasets._
+_Distribution of Named entities over classes in MilliyetNER and WikiANN datasets._
 
 [^tur^]: Gökhan Tür, Dilek Hakkani-TüR, and Kemal Oflazer. 2003.[ A statistical information extraction system for turkish](https://www.cambridge.org/core/journals/natural-language-engineering/article/abs/statistical-information-extraction-system-for-turkish/7C288FAFC71D5F0763C1F8CE66464017). Natural Language Engineering, 9(2):181–210
 
