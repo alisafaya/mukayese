@@ -7,12 +7,15 @@ const TasksContainer = styled.div`
   row-gap: 1rem;
   display: grid;
   --tw-bg-opacity: 1;
+  
 
   .landing-div {
     --tw-bg-opacity: 1;
     position: relative;
     margin-top: -1px;
     height: 100%;
+    max-width: 100%;
+
   }
 
   .landing-div-nested-one {
@@ -89,29 +92,31 @@ p, a {
 
 const SlidesContainer = styled.div`
   font-family: "Helvetica";
-  display: flex;
+  // display: flex;
   padding-top: 2rem;
   padding-bottom: 2rem;
   --tw-bg-opacity: 1;
-  margin-left: 10%;
-  margin-right: 10%;
-  
+  // margin-left: 10%;
+  // margin-right: 10%;
+  max-width: 100%;
+
   .slides-main-div {
-    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   h1 {
-  margin-bottom: 0px;
-  --tw-bg-opacity: 1;
-  color: rgba(107, 114, 128, var(--tw-text-opacity));
-  line-height: 1.25;
-  font-weight: 500;
-  font-variant: small-caps;
-  font-size: 3rem;
-  text-align: center;
-  width: 100%;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+    margin-bottom: 0px;
+    --tw-bg-opacity: 1;
+    color: rgba(107, 114, 128, var(--tw-text-opacity));
+    line-height: 1.25;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
   .span1 {
