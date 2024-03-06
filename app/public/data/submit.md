@@ -65,7 +65,4 @@ If you go to your repository on GitHub, you'll see a Compare & pull request butt
 
 Now submit the pull request.
 
-Soon I'll be merging all your changes into the master branch of this project. You will get a notification email once the changes have been merged.
-
-## 7. Congratulations! You've just completed the standard fork -> clone -> edit -> pull request workflow that you'll encounter often as a contributor!
-
+Soon we'll be merging all your changes into the master branch of this project.

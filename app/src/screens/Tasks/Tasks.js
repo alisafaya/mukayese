@@ -10,10 +10,14 @@ import Slides from "./Slides";
 const Tasks = () => {
 
   const [tasks, setTasks] = useState(null);
+  const [llm_tasks, setLlmTasks] = useState(null);
 
   useEffect(() => {
-    listTasks().then((r) => {
+    listTasks("nlp").then((r) => {
       setTasks(r);
+    });
+    listTasks("llm").then((r) => {
+      setLlmTasks(r);
     });
   }, []);
 
@@ -36,7 +40,27 @@ const Tasks = () => {
               marginBottom: 16,
             }}
           >
-            <h2 className="datasets-title">📏 Benchmarks</h2>
+            <h2 className="datasets-title">MukayeseLLM Benchmark</h2>
+          </div>
+          <TaskCardsContainer>
+            {llm_tasks?.map((task) => (
+              <TaskCard key={task.id} {...task} />
+            ))}
+          </TaskCardsContainer>
+        </div>
+      </TasksGridContainer>
+
+      <TasksGridContainer>
+        <div className="datasets-c">
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginBottom: 16,
+            }}
+          >
+            <h2 className="datasets-title">Mukayese NLP Benchmarks</h2>
           </div>
           <TaskCardsContainer>
             {tasks?.map((task) => (

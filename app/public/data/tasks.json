@@ -1,11 +1,5 @@
 [
   {
-    "id": "dependency_parsing",
-    "name": "Dependency Parsing",
-    "short_description": "Dependency parsing is the task of analyzing the grammatical structure of a sentence.",
-    "file": "dependency_parsing.md"
-  },
-  {
     "id": "language_modeling",
     "name": "Language Modeling",
     "short_description": "Language modeling is the task of assigning a probability to sentences in a language.",
@@ -16,12 +10,6 @@
     "name": "Machine Translation",
     "short_description": "Machine translation is the task of translating text from one language to another.",
     "file": "machine_translation.md"
-  },
-  {
-    "id": "morphological_analysis",
-    "name": "Morphological Analysis",
-    "short_description": "Morphological analysis is the task of segmenting words into morphemes and identifying their classes.",
-    "file": "morphological_analysis.md"
   },
   {
     "id": "named_entity_recognition",

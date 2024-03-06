@@ -1,8 +1,9 @@
-import { TASKS_PATH, TASKS_DETAILS_PATH, SUBMIT_PATH } from "../constants/Routes";
+import { LLM_TASKS_PATH, TASKS_PATH, TASKS_DETAILS_PATH, SUBMIT_PATH } from "../constants/Routes";
 
-export const listTasks = async () => {
+export const listTasks = async (type) => {
 
-  let res = await fetch(TASKS_PATH, {
+  let path = type === "llm" ? LLM_TASKS_PATH : TASKS_PATH
+  let res = await fetch(path, {
   })
     .catch((error) => {
       console.error(error);
@@ -14,6 +15,7 @@ export const listTasks = async () => {
 
 export const getTask = async (id) => {
 
+  // fetch tasks
   let res = await fetch(TASKS_PATH, {
   })
     .catch((error) => {
@@ -21,6 +23,17 @@ export const getTask = async (id) => {
     })
 
   let resJson = await res.json()
+
+  // fetch llm tasks
+  let resLlm = await fetch(LLM_TASKS_PATH, {
+  })
+    .catch((error) => {
+      console.error(error);
+    })
+
+  let resJsonLlm = await resLlm.json()
+
+  resJson = resJson.concat(resJsonLlm)
 
   let task = resJson.find(x => x.id === id)
 
