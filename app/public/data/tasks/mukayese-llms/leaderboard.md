@@ -31,9 +31,11 @@ This leaderboard is designed to evaluate the performance of causal large languag
 
 ## 📚 MukayeseLLM Tasks 📚 
 
-### Language Modeling on trnews-64 
+### 1. Language Modeling on trnews-64
 
 __trnews-64__ is a language modeling benchmark that contains 64 million words of news columns and articles retrieved from the TS Timeline Corpus [^2^]. This corpus consists of a mix of news articles collected from different journals about various domains and topics. Since trnews-64 is intended for evaluating bpc language model on the character level, articles were lightly pre-processed, and no further tokenization was applied.
+
+Evaluation scripts for trnews-64 are available for pytorch [here](/data/src/evaluate_bpc_pytorch.py), and for flax [here](/data/src/evaluate_bpc_flax.py).
 
 [^2^]: Taner Sezer. 2017. Ts corpus project: An online turkish dictionary and ts diy corpus. European Journal of Language and Literature, 9(1):18–24.
 
