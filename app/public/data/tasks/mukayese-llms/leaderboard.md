@@ -35,7 +35,7 @@ Auto-regressive language modeling focuses on modeling the probability `P(X)` of 
 
 __trnews-64__ is a language modeling benchmark that contains 64 million words of news columns and articles retrieved from the TS Timeline Corpus [^2^]. This corpus consists of a mix of news articles collected from different journals about various domains and topics. Since trnews-64 is intended for evaluating bpc language model on the character level, articles were lightly pre-processed, and no further tokenization was applied.
 
-Evaluation scripts for trnews-64 are available for pytorch [here](/data/src/evaluate_bpc_pytorch.py), and for flax [here](/data/src/evaluate_bpc_flax.py).
+Evaluation scripts for trnews-64 are available for pytorch and flax [here](https://github.com/tdd-ai/trnews-64/tree/main/evaluation). Moreover, we include a test for training data contamination to check if the models pre-training data has been contaminated with the trnews-64 test set.
 
 [^2^]: Taner Sezer. 2017. Ts corpus project: An online turkish dictionary and ts diy corpus. European Journal of Language and Literature, 9(1):18–24.
 
