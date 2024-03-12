@@ -1,7 +1,7 @@
 [
   {
     "id": "mukayese_llm",
-    "name": "MukayeseLLM Leaderboard",
+    "name": "MukayeseLLM Leaderboard (New!)",
     "short_description": "MukayeseLLM Leaderboard is a leaderboard for ranking and evaluating the performance of various LLMs on Turkish tasks.",
     "file": "mukayese-llms/leaderboard.md"
   }

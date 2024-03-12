@@ -2,8 +2,6 @@
 
 This leaderboard is designed to evaluate the performance of causal large language models (LLMs) on several Turkish language tasks.
 
-<!-- Auto-regressive language modeling focuses on modeling the probability `P(X)` of a text sequence of `n` tokens, where `X = (x_1, x_2, ..., x_n)`, and `P(X) = \prod_{i=1}^{n}P(x_i|x_{<i})`. The objective is to estimate the probability of a given text sequence. -->
-
 ## 📊 Leaderboard
 
 | Model | Type | Size (B) | trnews-64 (bpc ⏬) |
@@ -33,6 +31,8 @@ This leaderboard is designed to evaluate the performance of causal large languag
 
 ### 1. Language Modeling on trnews-64
 
+Auto-regressive language modeling focuses on modeling the probability `P(X)` of a text sequence of `n` tokens, where `X = (x_1, x_2, ..., x_n)`, and `P(X) = \prod_{i=1}^{n}P(x_i|x_{<i})`. The objective is to estimate the probability of a given text sequence.
+
 __trnews-64__ is a language modeling benchmark that contains 64 million words of news columns and articles retrieved from the TS Timeline Corpus [^2^]. This corpus consists of a mix of news articles collected from different journals about various domains and topics. Since trnews-64 is intended for evaluating bpc language model on the character level, articles were lightly pre-processed, and no further tokenization was applied.
 
 Evaluation scripts for trnews-64 are available for pytorch [here](/data/src/evaluate_bpc_pytorch.py), and for flax [here](/data/src/evaluate_bpc_flax.py).
@@ -43,22 +43,18 @@ Evaluation scripts for trnews-64 are available for pytorch [here](/data/src/eval
 
 Language models are trained on minimizing the negative log-likelihood (NLL) of the training set, and their performance is measured based on how well they can generalize on the test set:
 
-<!-- \\[nll(X_{test}) = -\frac{1}{n} \sum_{i=1}^{n}log\ p_\theta(x_i|x_{test}{<i})\\] -->
 <br>
 <img src="https://latex.codecogs.com/svg.latex?nll(X_{test}) = -\frac{1}{n} \sum_{i=1}^{n}log\ p_\theta(x_i|x_{test}{<i})" style="border:none;" height="80" />
 <br>
-
-<!-- where \\[X_{test}\\] is the test set, \\[n\\] is the number of tokens in \\[X_{test}\\], and \\[p_\theta(x_i|x_{test}{<i})\\] is the probability of the `i`-th token given the previous tokens. -->
 
 where `X_{test}` is the test set, `n` is the number of tokens in `X_{test}`, and `p_\theta(x_i|x_{test}{<i})` is the probability of the `i`-th token given the previous tokens.
 
 Due to the fact that NLL is averaged over the number of tokens, it is not a good measure to compare models with different tokenization algorithms. To address this issue, bits-per-character (BPC) is used as a more robust metric. BPC is calculated as follows:
 
-<!-- \\[ bpc(X_{test}) = (\frac{n}{N}nll(X_{test}))/log(2) = (-\frac{1}{N} \sum_{i=1}^{N}log\ p_\theta(x_i|x_{test}{<i}))/log(2) \\] -->
 <br>
-<img src="https://latex.codecogs.com/svg.latex?bpc(X_{test}) = (\frac{n}{N}nll(X_{test}))/log(2) = (-\frac{1}{N} \sum_{i=1}^{N}log\ p_\theta(x_i|x_{test}{<i}))/log(2)" style="border:none;" height="80" />
+<img src="https://latex.codecogs.com/svg.latex?bpc(X_{test}) = \frac{n}{Nlog(2)}nll(X_{test}) = \frac{-1}{Nlog(2)} \sum_{i=1}^{n}log\ p_\theta(x_i|x_{test}{<i})" style="border:none;" height="80" />
 <br>
 
-where `N` is the original number of tokens in `X_{test}`, and `n` is the number of tokens of `X_{test}` when tokenized using the model's tokenization algorithm. Depending on what tokenization is used, `N` might or might not be equal to `n`. To accommodate this issue, `N` should always be the same when calculating bpc for different models [^shoeybi-etal-2019-megatronlm^].
+where `N` is the original number of characters in `X_{test}`, and `n` is the number of tokens of `X_{test}` when tokenized using the model's tokenization algorithm. Depending on what tokenization is used, `N` might or might not be equal to `n`. To accommodate this issue, `N` should always be the same when calculating bpc for different models [^shoeybi-etal-2019-megatronlm^].
 
 [^shoeybi-etal-2019-megatronlm^]: Mohammad Shoeybi, Mostofa Patwary, Raul Puri, Patrick LeGresley, Jared Casper, and Bryan Catanzaro. 2019. Megatron-lm: Training multi-billion parameter language models using model parallelism. Computing Research Repository, arXiv:1909.08053. Version 4.

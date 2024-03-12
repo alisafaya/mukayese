@@ -240,12 +240,13 @@ const DividerContainer = styled.div`
 const TaskCardsContainer = styled.div`
 
 display: grid;
-grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
 padding-left: 10%;
 padding-right: 10%;
 width: 100%;
 row-gap: 2rem;
 column-gap: 2rem;
+justify-content: center;
 
 `;
 
@@ -327,6 +328,7 @@ h3 {
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
   font-size: 0.9rem;
+  text-align: center;
   &:hover {
     -webkit-line-clamp: 12; /* number of lines to show */
   }

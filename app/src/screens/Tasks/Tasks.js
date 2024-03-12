@@ -40,7 +40,6 @@ const Tasks = () => {
               marginBottom: 16,
             }}
           >
-            <h2 className="datasets-title">MukayeseLLM Benchmark</h2>
           </div>
           <TaskCardsContainer>
             {llm_tasks?.map((task) => (
