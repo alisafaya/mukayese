@@ -6,7 +6,7 @@ This leaderboard is designed to evaluate the performance of causal large languag
 
 | Model | Type | Size (B) | trnews-64 (bpc ⏬) |
 |:----- |:----:| -------: | :----------------: |
-| [asafaya/kanarya-2b](https://huggingface.co/asafaya/kanarya-2b)  | base             | 2.06        | 0.728 |
+| [asafaya/kanarya-2b](https://huggingface.co/asafaya/kanarya-2b)  | base             | 2.06        | 0.724 |
 | [asafaya/kanarya-750m](https://huggingface.co/asafaya/kanarya-750m) | base             | 0.74        | 0.766 |
 | [ytu-ce-cosmos/turkish-gpt2-large](https://huggingface.co/ytu-ce-cosmos/turkish-gpt2-large) | base             | 0.77        | 0.805 |
 | [Trendyol/Trendyol-LLM-7b-chat-v0.1](https://huggingface.co/Trendyol/Trendyol-LLM-7b-chat-v0.1) | finetuned-chat   | 6.84        | 0.820 |
